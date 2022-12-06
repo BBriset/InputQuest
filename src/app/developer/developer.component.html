@@ -1,0 +1,10 @@
+<div>
+  <p>{{ developer.lastName }}</p>
+  <p>{{ developer.firstName }}</p>
+  <p>{{ developer.age }}</p>
+  <p>{{ developer.gender }}</p>
+  <p>{{ developer.bio }}</p>
+  <input type="text" [(ngModel)]="skillName" />
+  <button (click)="addSkill()">test1</button>
+  <app-skill *ngFor="let i of developer.skills" [skill]="i"></app-skill>
+</div>
